@@ -1,0 +1,107 @@
+[
+  {
+    "epoch": 1,
+    "duration_sec": 670.81,
+    "learning_rate": 0.0001,
+    "loss": 0.003897,
+    "accuracy": 0.998125,
+    "precision": 0.998335,
+    "recall": 0.999167,
+    "auc": 0.99999,
+    "val_loss": 0.821391,
+    "val_accuracy": 0.782548,
+    "val_precision": 0.981259,
+    "val_recall": 0.733741,
+    "val_f1": 0.839638,
+    "val_auc": 0.911437,
+    "sampling": {
+      "nitymed_drowsy": 800,
+      "rldd_alert": 400,
+      "rldd_drowsy": 400
+    }
+  },
+  {
+    "epoch": 2,
+    "duration_sec": 1363.52,
+    "learning_rate": 0.0001,
+    "loss": 0.000973,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "auc": 1.0,
+    "val_loss": 2.977146,
+    "val_accuracy": 0.557569,
+    "val_precision": 0.972354,
+    "val_recall": 0.442328,
+    "val_f1": 0.608051,
+    "val_auc": 0.779102,
+    "sampling": {
+      "nitymed_drowsy": 800,
+      "rldd_alert": 400,
+      "rldd_drowsy": 400
+    }
+  },
+  {
+    "epoch": 3,
+    "duration_sec": 610.87,
+    "learning_rate": 0.0001,
+    "loss": 0.000784,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "auc": 1.0,
+    "val_loss": 2.756129,
+    "val_accuracy": 0.563981,
+    "val_precision": 0.973582,
+    "val_recall": 0.450234,
+    "val_f1": 0.615725,
+    "val_auc": 0.79061,
+    "sampling": {
+      "nitymed_drowsy": 800,
+      "rldd_alert": 400,
+      "rldd_drowsy": 400
+    }
+  },
+  {
+    "epoch": 4,
+    "duration_sec": 517.54,
+    "learning_rate": 5e-05,
+    "loss": 0.00027,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "auc": 1.0,
+    "val_loss": 2.497272,
+    "val_accuracy": 0.589908,
+    "val_precision": 0.974674,
+    "val_recall": 0.48401,
+    "val_f1": 0.646819,
+    "val_auc": 0.809444,
+    "sampling": {
+      "nitymed_drowsy": 800,
+      "rldd_alert": 400,
+      "rldd_drowsy": 400
+    }
+  },
+  {
+    "epoch": 5,
+    "duration_sec": 1159.54,
+    "learning_rate": 5e-05,
+    "loss": 0.000224,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "auc": 1.0,
+    "val_loss": 2.874266,
+    "val_accuracy": 0.558684,
+    "val_precision": 0.973934,
+    "val_recall": 0.443047,
+    "val_f1": 0.609039,
+    "val_auc": 0.781778,
+    "sampling": {
+      "nitymed_drowsy": 800,
+      "rldd_alert": 400,
+      "rldd_drowsy": 400
+    }
+  }
+]

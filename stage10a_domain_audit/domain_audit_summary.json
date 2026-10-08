@@ -1,0 +1,394 @@
+{
+  "dataset_summary": {
+    "NITYMED": {
+      "total_sequences": 5822,
+      "total_videos": 126,
+      "splits": {
+        "train": 4118,
+        "val": 860,
+        "test": 844
+      },
+      "behaviors": {
+        "Yawning": 3455,
+        "Microsleep": 2367
+      },
+      "labels": {
+        "1": 5822
+      },
+      "note": "NITYMED currently contains only label=1 drowsiness-indicative sequences.",
+      "duration_mean_sec": 1.8,
+      "duration_std_sec": 0.01,
+      "valid_frame_count_mean": 15.92,
+      "reused_frame_count_mean": 0.08
+    },
+    "UTA_RLDD": {
+      "total_sequences": 20009,
+      "total_videos": 36,
+      "total_participants": 12,
+      "splits": {
+        "train": 13755,
+        "test": 3527,
+        "val": 2727
+      },
+      "behaviors": {
+        "LowVigilant": 7106,
+        "Alert": 7039,
+        "Drowsy": 5864
+      },
+      "labels": {
+        "1": 12970,
+        "0": 7039
+      },
+      "split_participants": {
+        "train": [
+          "P01",
+          "P02",
+          "P03",
+          "P06",
+          "P09",
+          "P10",
+          "P11",
+          "P12"
+        ],
+        "val": [
+          "P05",
+          "P08"
+        ],
+        "test": [
+          "P04",
+          "P07"
+        ]
+      },
+      "excluded_test_participants": [
+        "P04",
+        "P07"
+      ],
+      "duration_mean_sec": 1.59,
+      "duration_std_sec": 0.28,
+      "valid_frame_count_mean": 15.85,
+      "reused_frame_count_mean": 0.15
+    }
+  },
+  "face_geometry_stats": {
+    "A_NITYMED_Drowsy": {
+      "count": 50,
+      "aspect_ratio_mean": 1.0,
+      "aspect_ratio_median": 1.0,
+      "aspect_ratio_std": 0.0,
+      "aspect_ratio_min": 1.0,
+      "aspect_ratio_max": 1.0,
+      "aspect_ratio_p25": 1.0,
+      "aspect_ratio_p75": 1.0,
+      "valid_face_frames_pct_mean": 99.75
+    },
+    "B_RLDD_Alert": {
+      "count": 50,
+      "aspect_ratio_mean": 1.0,
+      "aspect_ratio_median": 1.0,
+      "aspect_ratio_std": 0.0,
+      "aspect_ratio_min": 1.0,
+      "aspect_ratio_max": 1.0,
+      "aspect_ratio_p25": 1.0,
+      "aspect_ratio_p75": 1.0,
+      "valid_face_frames_pct_mean": 99.75
+    },
+    "C_RLDD_Drowsy": {
+      "count": 50,
+      "aspect_ratio_mean": 1.0,
+      "aspect_ratio_median": 1.0,
+      "aspect_ratio_std": 0.0,
+      "aspect_ratio_min": 1.0,
+      "aspect_ratio_max": 1.0,
+      "aspect_ratio_p25": 1.0,
+      "aspect_ratio_p75": 1.0,
+      "valid_face_frames_pct_mean": 98.88
+    }
+  },
+  "pixel_stats": {
+    "A_NITYMED_Drowsy": {
+      "mean_RGB": [
+        75.62,
+        68.43,
+        59.77
+      ],
+      "std_RGB": [
+        32.55,
+        27.9,
+        24.9
+      ],
+      "min_pixel_uint8": 13.0,
+      "max_pixel_uint8": 200.0,
+      "mean_luminance": 69.6,
+      "std_luminance": 28.79,
+      "mobilenet_norm_min": -0.898,
+      "mobilenet_norm_max": 0.5686,
+      "mobilenet_norm_mean": -0.4671,
+      "mobilenet_norm_std": 0.2302
+    },
+    "B_RLDD_Alert": {
+      "mean_RGB": [
+        130.74,
+        112.05,
+        100.68
+      ],
+      "std_RGB": [
+        72.16,
+        72.65,
+        67.86
+      ],
+      "min_pixel_uint8": 0.0,
+      "max_pixel_uint8": 255.0,
+      "mean_luminance": 116.34,
+      "std_luminance": 70.53,
+      "mobilenet_norm_min": -1.0,
+      "mobilenet_norm_max": 1.0,
+      "mobilenet_norm_mean": -0.102,
+      "mobilenet_norm_std": 0.5647
+    },
+    "C_RLDD_Drowsy": {
+      "mean_RGB": [
+        123.23,
+        102.9,
+        90.9
+      ],
+      "std_RGB": [
+        71.53,
+        68.28,
+        63.25
+      ],
+      "min_pixel_uint8": 0.0,
+      "max_pixel_uint8": 255.0,
+      "mean_luminance": 107.61,
+      "std_luminance": 67.68,
+      "mobilenet_norm_min": -1.0,
+      "mobilenet_norm_max": 1.0,
+      "mobilenet_norm_mean": -0.1712,
+      "mobilenet_norm_std": 0.5418
+    }
+  },
+  "brightness_stats": {
+    "A_NITYMED_Drowsy": {
+      "mean_brightness": 69.6,
+      "brightness_std": 28.79,
+      "contrast_proxy_rms": 28.11,
+      "dark_pixels_pct": 0.0,
+      "bright_pixels_pct": 0.0
+    },
+    "B_RLDD_Alert": {
+      "mean_brightness": 116.34,
+      "brightness_std": 70.53,
+      "contrast_proxy_rms": 67.88,
+      "dark_pixels_pct": 0.733,
+      "bright_pixels_pct": 6.8651
+    },
+    "C_RLDD_Drowsy": {
+      "mean_brightness": 107.61,
+      "brightness_std": 67.68,
+      "contrast_proxy_rms": 61.99,
+      "dark_pixels_pct": 1.2646,
+      "bright_pixels_pct": 1.2686
+    }
+  },
+  "color_stats": {
+    "A_NITYMED_Drowsy": {
+      "r_mean": 75.62,
+      "r_std": 32.55,
+      "g_mean": 68.43,
+      "g_std": 27.9,
+      "b_mean": 59.77,
+      "b_std": 24.9,
+      "h_mean": 22.6,
+      "s_mean": 51.89,
+      "v_mean": 76.05
+    },
+    "B_RLDD_Alert": {
+      "r_mean": 130.74,
+      "r_std": 72.16,
+      "g_mean": 112.05,
+      "g_std": 72.65,
+      "b_mean": 100.68,
+      "b_std": 67.86,
+      "h_mean": 36.82,
+      "s_mean": 81.34,
+      "v_mean": 134.24
+    },
+    "C_RLDD_Drowsy": {
+      "r_mean": 123.23,
+      "r_std": 71.53,
+      "g_mean": 102.9,
+      "g_std": 68.28,
+      "b_mean": 90.9,
+      "b_std": 63.25,
+      "h_mean": 41.39,
+      "s_mean": 82.0,
+      "v_mean": 125.04
+    }
+  },
+  "baseline_model_output_stats": {
+    "A_NITYMED_Drowsy": {
+      "num_samples": 50,
+      "mean_probability": 0.999986,
+      "median_probability": 0.999992,
+      "std_probability": 2.2e-05,
+      "min_probability": 0.999848,
+      "max_probability": 0.999998,
+      "percentile_25": 0.999987,
+      "percentile_75": 0.999995,
+      "pct_ge_0.50": 100.0,
+      "pct_ge_0.90": 100.0,
+      "pct_ge_0.99": 100.0
+    },
+    "B_RLDD_Alert": {
+      "num_samples": 50,
+      "mean_probability": 0.030734,
+      "median_probability": 2.3e-05,
+      "std_probability": 0.151461,
+      "min_probability": 1e-05,
+      "max_probability": 0.981994,
+      "percentile_25": 1.9e-05,
+      "percentile_75": 3.5e-05,
+      "pct_ge_0.50": 2.0,
+      "pct_ge_0.90": 2.0,
+      "pct_ge_0.99": 0.0
+    },
+    "C_RLDD_Drowsy": {
+      "num_samples": 50,
+      "mean_probability": 0.981322,
+      "median_probability": 0.999978,
+      "std_probability": 0.113588,
+      "min_probability": 0.188962,
+      "max_probability": 0.999995,
+      "percentile_25": 0.999941,
+      "percentile_75": 0.999986,
+      "pct_ge_0.50": 98.0,
+      "pct_ge_0.90": 98.0,
+      "pct_ge_0.99": 94.0
+    }
+  },
+  "participant_stats": {
+    "P01": {
+      "split": "train",
+      "num_samples": 30,
+      "mean_probability": 0.7333,
+      "median_probability": 1.0,
+      "std_probability": 0.4422,
+      "pct_predicted_drowsy": 73.33,
+      "alert_mean_prob": 0.0,
+      "drowsy_mean_prob": 1.0
+    },
+    "P02": {
+      "split": "train",
+      "num_samples": 30,
+      "mean_probability": 0.7333,
+      "median_probability": 0.9999,
+      "std_probability": 0.4422,
+      "pct_predicted_drowsy": 73.33,
+      "alert_mean_prob": 0.0,
+      "drowsy_mean_prob": 0.9999
+    },
+    "P03": {
+      "split": "train",
+      "num_samples": 30,
+      "mean_probability": 0.5,
+      "median_probability": 0.5,
+      "std_probability": 0.5,
+      "pct_predicted_drowsy": 50.0,
+      "alert_mean_prob": 0.0,
+      "drowsy_mean_prob": 1.0
+    },
+    "P05": {
+      "split": "val",
+      "num_samples": 30,
+      "mean_probability": 0.6513,
+      "median_probability": 0.9554,
+      "std_probability": 0.4149,
+      "pct_predicted_drowsy": 63.33,
+      "alert_mean_prob": 0.1885,
+      "drowsy_mean_prob": 0.8827
+    },
+    "P06": {
+      "split": "train",
+      "num_samples": 30,
+      "mean_probability": 0.5,
+      "median_probability": 0.4998,
+      "std_probability": 0.4999,
+      "pct_predicted_drowsy": 50.0,
+      "alert_mean_prob": 0.0001,
+      "drowsy_mean_prob": 0.9999
+    },
+    "P08": {
+      "split": "val",
+      "num_samples": 30,
+      "mean_probability": 0.9868,
+      "median_probability": 0.9999,
+      "std_probability": 0.0705,
+      "pct_predicted_drowsy": 100.0,
+      "alert_mean_prob": 0.9997,
+      "drowsy_mean_prob": 0.9853
+    },
+    "P09": {
+      "split": "train",
+      "num_samples": 30,
+      "mean_probability": 0.7333,
+      "median_probability": 0.9999,
+      "std_probability": 0.4422,
+      "pct_predicted_drowsy": 73.33,
+      "alert_mean_prob": 0.0,
+      "drowsy_mean_prob": 0.9999
+    },
+    "P10": {
+      "split": "train",
+      "num_samples": 30,
+      "mean_probability": 0.8667,
+      "median_probability": 1.0,
+      "std_probability": 0.3399,
+      "pct_predicted_drowsy": 86.67,
+      "alert_mean_prob": 0.0,
+      "drowsy_mean_prob": 1.0
+    },
+    "P11": {
+      "split": "train",
+      "num_samples": 30,
+      "mean_probability": 0.3333,
+      "median_probability": 0.0,
+      "std_probability": 0.4714,
+      "pct_predicted_drowsy": 33.33,
+      "alert_mean_prob": 0.0,
+      "drowsy_mean_prob": 1.0
+    },
+    "P12": {
+      "split": "train",
+      "num_samples": 30,
+      "mean_probability": 0.7667,
+      "median_probability": 1.0,
+      "std_probability": 0.4229,
+      "pct_predicted_drowsy": 76.67,
+      "alert_mean_prob": 0.0,
+      "drowsy_mean_prob": 1.0
+    }
+  },
+  "feature_space_stats": {
+    "A_NITYMED_Drowsy": {
+      "sample_count": 50,
+      "within_group_variance": 0.204178,
+      "centroid_norm": 22.6444
+    },
+    "B_RLDD_Alert": {
+      "sample_count": 50,
+      "within_group_variance": 0.279377,
+      "centroid_norm": 24.413
+    },
+    "C_RLDD_Drowsy": {
+      "sample_count": 50,
+      "within_group_variance": 0.269323,
+      "centroid_norm": 23.4061
+    },
+    "centroid_distance_A_NITYMED_Drowsy_vs_B_RLDD_Alert": 14.3582,
+    "centroid_distance_A_NITYMED_Drowsy_vs_C_RLDD_Drowsy": 12.7353,
+    "centroid_distance_B_RLDD_Alert_vs_C_RLDD_Drowsy": 7.1881,
+    "pca_explained_variance_ratio": [
+      0.1349,
+      0.0876
+    ]
+  }
+}

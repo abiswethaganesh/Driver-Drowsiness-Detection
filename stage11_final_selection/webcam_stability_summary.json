@@ -1,0 +1,24 @@
+{
+  "model_path": "d:\\Sem 7\\NNDL\\Project Demo\\nitymed_work\\models\\cnn_lstm_best.keras",
+  "total_predictions": 100,
+  "valid_face_sequences": 100,
+  "missed_face_frames": 0,
+  "mean_probability": 0.9999760675430298,
+  "median_probability": 0.9999802112579346,
+  "std_probability": 1.2227992690890183e-05,
+  "min_probability": 0.9999471306800842,
+  "max_probability": 0.9999908804893494,
+  "pct_gte_050": 100.0,
+  "pct_gte_090": 100.0,
+  "pct_gte_099": 100.0,
+  "transitions": {
+    "total_transitions": 99,
+    "alert_to_alert": 0,
+    "alert_to_drowsy": 0,
+    "drowsy_to_alert": 0,
+    "drowsy_to_drowsy": 99,
+    "state_changes": 0,
+    "state_change_rate": 0.0,
+    "longest_drowsy_run": 100
+  }
+}

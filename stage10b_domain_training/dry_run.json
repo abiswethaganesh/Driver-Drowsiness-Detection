@@ -1,0 +1,15 @@
+{
+  "checkpoint_loaded": true,
+  "input_shape_valid": true,
+  "mobilenet_frozen": true,
+  "lstm_head_trainable": true,
+  "batch_shape_valid": true,
+  "labels_present": [
+    0,
+    1
+  ],
+  "normalization_valid": true,
+  "forward_pass_loss": 0.006347,
+  "nan_gradients": false,
+  "status": "PASS"
+}

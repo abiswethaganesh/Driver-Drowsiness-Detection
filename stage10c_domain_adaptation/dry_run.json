@@ -1,0 +1,14 @@
+{
+  "baseline_exists": true,
+  "stage08e_exists": true,
+  "stage10b_exists": true,
+  "input_shape_valid": true,
+  "labels_present": true,
+  "test_participants_excluded": true,
+  "norm_A1_valid": true,
+  "norm_A2_valid": true,
+  "norm_A3_valid": true,
+  "norm_A4_valid": true,
+  "forward_pass": 0.9998570680618286,
+  "status": "PASS"
+}

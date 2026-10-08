@@ -1,0 +1,14 @@
+category,group,num_samples,mean,median,std,min,max,pct_ge_0.50,pct_ge_0.90,pct_ge_0.99
+Baseline_Model_Output,A_NITYMED_Drowsy,50,0.999986,0.999992,2.2e-05,0.999848,0.999998,100.0,100.0,100.0
+Baseline_Model_Output,B_RLDD_Alert,50,0.030734,2.3e-05,0.151461,1e-05,0.981994,2.0,2.0,0.0
+Baseline_Model_Output,C_RLDD_Drowsy,50,0.981322,0.999978,0.113588,0.188962,0.999995,98.0,98.0,94.0
+Participant_Breakdown,UTA_RLDD_P01,30,0.7333,1.0,0.4422,,,73.33,,
+Participant_Breakdown,UTA_RLDD_P02,30,0.7333,0.9999,0.4422,,,73.33,,
+Participant_Breakdown,UTA_RLDD_P03,30,0.5,0.5,0.5,,,50.0,,
+Participant_Breakdown,UTA_RLDD_P05,30,0.6513,0.9554,0.4149,,,63.33,,
+Participant_Breakdown,UTA_RLDD_P06,30,0.5,0.4998,0.4999,,,50.0,,
+Participant_Breakdown,UTA_RLDD_P08,30,0.9868,0.9999,0.0705,,,100.0,,
+Participant_Breakdown,UTA_RLDD_P09,30,0.7333,0.9999,0.4422,,,73.33,,
+Participant_Breakdown,UTA_RLDD_P10,30,0.8667,1.0,0.3399,,,86.67,,
+Participant_Breakdown,UTA_RLDD_P11,30,0.3333,0.0,0.4714,,,33.33,,
+Participant_Breakdown,UTA_RLDD_P12,30,0.7667,1.0,0.4229,,,76.67,,
