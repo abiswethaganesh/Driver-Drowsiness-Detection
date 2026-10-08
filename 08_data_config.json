@@ -1,0 +1,79 @@
+{
+  "stage": "STAGE 08 -- TRAINING DATA INTEGRATION & PREPARATION",
+  "dataset_sources": {
+    "NITYMED": {
+      "seq_dir": "sequences",
+      "train_npz": "sequences/train/sequences_train.npz",
+      "val_npz": "sequences/val/sequences_val.npz",
+      "test_npz": "sequences/test/sequences_test.npz",
+      "metadata_csv": "metadata.csv",
+      "sequence_metadata_csv": "sequence_metadata.csv"
+    },
+    "UTA-RLDD": {
+      "seq_dir": "sequences_rldd",
+      "train_npz": "sequences_rldd/train/sequences_rldd_train.npz",
+      "val_npz": "sequences_rldd/val/sequences_rldd_val.npz",
+      "test_npz": "sequences_rldd/test/sequences_rldd_test.npz",
+      "metadata_csv": "uta_rldd_metadata.csv",
+      "sequence_metadata_csv": "uta_rldd_sequence_metadata.csv"
+    }
+  },
+  "binary_label_mapping": {
+    "0": "Alert / Normal (Class 0)",
+    "1": "Drowsiness-indicative (Class 1)"
+  },
+  "sequence_shape": {
+    "sequence_length": 16,
+    "image_width": 128,
+    "image_height": 128,
+    "channels": 3,
+    "color_space": "RGB",
+    "tensor_shape": [16, 128, 128, 3]
+  },
+  "image_normalization_strategy": {
+    "input_range": [0, 255],
+    "target_range": [-1.0, 1.0],
+    "formula": "tf.keras.applications.mobilenet_v2.preprocess_input(x) or (x / 127.5) - 1.0"
+  },
+  "splits_summary": {
+    "train": {
+      "total_sequences": 17873,
+      "alert_count_0": 4847,
+      "drowsy_count_1": 13026,
+      "nitymed_count": 4118,
+      "uta_rldd_count": 13755,
+      "imbalance_ratio_c1_c0": 2.6874
+    },
+    "val": {
+      "total_sequences": 3587,
+      "alert_count_0": 804,
+      "drowsy_count_1": 2783,
+      "nitymed_count": 860,
+      "uta_rldd_count": 2727
+    },
+    "test": {
+      "total_sequences": 4371,
+      "alert_count_0": 1388,
+      "drowsy_count_1": 2983,
+      "nitymed_count": 844,
+      "uta_rldd_count": 3527
+    }
+  },
+  "proposed_class_weights": {
+    "class_0_alert": 1.8437,
+    "class_1_drowsiness": 0.6861,
+    "formula": "w_j = total_train_samples / (2.0 * class_j_samples)",
+    "status": "CALCULATED_NOT_APPLIED"
+  },
+  "data_loading_strategy": {
+    "streaming": "Lazy-loading via tf.data.Dataset / PyTorch DataLoader generator reading crop JPEG paths on demand",
+    "batch_size": 16,
+    "ram_overhead_mb": 250
+  },
+  "leakage_safeguards": {
+    "rldd_participant_isolation": "PASSED (Train: P01,P02,P03,P06,P09,P10,P11,P12 | Val: P05,P08 | Test: P04,P07)",
+    "nitymed_video_isolation": "PASSED (88 Train vids | 19 Val vids | 19 Test vids)",
+    "sequence_id_uniqueness": "PASSED (25,831 unique sequence IDs)",
+    "test_in_train_check": "PASSED (0 test sequences in train set)"
+  }
+}

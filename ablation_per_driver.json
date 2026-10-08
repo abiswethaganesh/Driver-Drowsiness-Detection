@@ -1,0 +1,113 @@
+{
+  "status": "COMPLETED",
+  "timestamp": "2026-09-24 12:42:12",
+  "total_eval_sequences": 3511,
+  "pooled_baseline": {
+    "n_samples": 3511,
+    "accuracy": 0.667616,
+    "precision": 0.669574,
+    "recall": 0.897148,
+    "f1_score": 0.766833,
+    "fpr": 0.690233,
+    "fnr": 0.102852,
+    "confusion_matrix": {
+      "TN": 425,
+      "FP": 947,
+      "FN": 220,
+      "TP": 1919
+    }
+  },
+  "pooled_personalized": {
+    "n_samples": 3511,
+    "accuracy": 0.686129,
+    "precision": 0.672891,
+    "recall": 0.943432,
+    "f1_score": 0.78552,
+    "fpr": 0.715015,
+    "fnr": 0.056568,
+    "confusion_matrix": {
+      "TN": 391,
+      "FP": 981,
+      "FN": 121,
+      "TP": 2018
+    }
+  },
+  "overall_fpr_reduction": -0.024782,
+  "overall_accuracy_improvement": 0.018513,
+  "per_participant_results": [
+    {
+      "participant_id": "P04",
+      "eval_sequences": 2019,
+      "baseline_ear_mean": 0.2949,
+      "baseline_system": {
+        "n_samples": 2019,
+        "accuracy": 0.792472,
+        "precision": 0.850833,
+        "recall": 0.846542,
+        "f1_score": 0.848682,
+        "fpr": 0.326466,
+        "fnr": 0.153458,
+        "confusion_matrix": {
+          "TN": 425,
+          "FP": 206,
+          "FN": 213,
+          "TP": 1175
+        }
+      },
+      "personalized_system": {
+        "n_samples": 2019,
+        "accuracy": 0.824666,
+        "precision": 0.84148,
+        "recall": 0.917867,
+        "f1_score": 0.878015,
+        "fpr": 0.380349,
+        "fnr": 0.082133,
+        "confusion_matrix": {
+          "TN": 391,
+          "FP": 240,
+          "FN": 114,
+          "TP": 1274
+        }
+      },
+      "fpr_reduction": -0.053883,
+      "accuracy_improvement": 0.032194
+    },
+    {
+      "participant_id": "P07",
+      "eval_sequences": 1492,
+      "baseline_ear_mean": 0.2861,
+      "baseline_system": {
+        "n_samples": 1492,
+        "accuracy": 0.49866,
+        "precision": 0.50101,
+        "recall": 0.990679,
+        "f1_score": 0.665474,
+        "fpr": 1.0,
+        "fnr": 0.009321,
+        "confusion_matrix": {
+          "TN": 0,
+          "FP": 741,
+          "FN": 7,
+          "TP": 744
+        }
+      },
+      "personalized_system": {
+        "n_samples": 1492,
+        "accuracy": 0.49866,
+        "precision": 0.50101,
+        "recall": 0.990679,
+        "f1_score": 0.665474,
+        "fpr": 1.0,
+        "fnr": 0.009321,
+        "confusion_matrix": {
+          "TN": 0,
+          "FP": 741,
+          "FN": 7,
+          "TP": 744
+        }
+      },
+      "fpr_reduction": 0.0,
+      "accuracy_improvement": 0.0
+    }
+  ]
+}

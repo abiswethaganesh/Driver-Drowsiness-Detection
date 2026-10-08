@@ -1,0 +1,10 @@
+{
+  "1_file_exists": true,
+  "2_file_opens": true,
+  "3_slide_count_15": true,
+  "4_no_empty_slides": true,
+  "5_speaker_notes_exist": true,
+  "6_images_embedded": true,
+  "7_no_prohibited_placeholders": true,
+  "overall_ppt_quality": "PASS"
+}

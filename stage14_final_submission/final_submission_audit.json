@@ -1,0 +1,18 @@
+{
+  "1_ppt_exists": true,
+  "2_ppt_opens": true,
+  "3_slide_count_15": true,
+  "4_figures_exist": true,
+  "5_image_refs_valid": true,
+  "6_speaker_notes_exist": true,
+  "7_final_model_exists": true,
+  "8_final_demo_exists": true,
+  "9_final_report_exists": true,
+  "10_viva_document_exists": true,
+  "11_readme_exists": true,
+  "12_metrics_consistent": true,
+  "13_no_fabricated_metrics": true,
+  "14_no_unsupported_safety_claims": true,
+  "15_no_model_modification": true,
+  "overall_stage14_status": "PASS"
+}
