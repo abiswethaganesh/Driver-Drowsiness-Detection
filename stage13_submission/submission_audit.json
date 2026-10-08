@@ -1,0 +1,20 @@
+{
+  "1_final_model_exists": true,
+  "2_final_demo_exists": true,
+  "3_final_checks_exist": true,
+  "4_ppt_content_exists": true,
+  "5_report_exists": true,
+  "6_methodology_exists": true,
+  "7_results_table_exists": true,
+  "8_demo_script_exists": true,
+  "9_viva_prep_exists": true,
+  "10_elevator_pitch_exists": true,
+  "11_demo_checklist_exists": true,
+  "12_consistency_audit_exists": true,
+  "13_figures_exist": true,
+  "14_limitations_documented": true,
+  "15_future_work_documented": true,
+  "16_no_unsupported_claims": true,
+  "17_no_fabricated_metrics": true,
+  "overall_submission_status": "PASS"
+}
