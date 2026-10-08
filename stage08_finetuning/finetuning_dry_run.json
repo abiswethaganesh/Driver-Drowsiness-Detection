@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "mobilenet_total_layers": 155,
+  "mobilenet_trainable_layers": 25,
+  "mobilenet_frozen_layers": 130,
+  "total_parameters": 2604417,
+  "trainable_parameters": 1706433,
+  "frozen_parameters": 897984,
+  "single_batch_loss": 0.0036799341905862093,
+  "forward_pass_ms": 4519.27,
+  "test_data_in_training": false
+}

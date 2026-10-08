@@ -1,0 +1,25 @@
+{
+  "stage": "STAGE 08E -- MOBILENETV2 UPPER-LAYER FINE-TUNING CONFIGURATION",
+  "base_model": "D:\\Sem 7\\NNDL\\Project Demo\\nitymed_work\\models\\cnn_lstm_best.keras",
+  "fine_tuning": {
+    "unfrozen_layers": 25,
+    "total_mobilenet_layers": 155,
+    "learning_rate": 1e-05,
+    "optimizer": "Adam",
+    "loss": "binary_crossentropy",
+    "class_weights": {
+      "0": 1.8437,
+      "1": 0.6861
+    },
+    "max_epochs": 15
+  },
+  "data_splits": {
+    "train_sequences": 17873,
+    "val_sequences": 3587,
+    "test_sequences": 4371,
+    "held_out_test_participants": [
+      "P04",
+      "P07"
+    ]
+  }
+}
