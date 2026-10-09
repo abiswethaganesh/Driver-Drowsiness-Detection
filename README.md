@@ -57,17 +57,6 @@ not ground truth, and spot-check them.
   EMA rate, so a driver actually becoming drowsy can't drag their own
   "normal" baseline downward.
 
-## Honesty checks built into the code
-
-- `13_ablation_comparison.py` prints both systems' metrics unconditionally —
-  it does not assert personalization is better, and includes an explicit
-  breakdown for naturally narrow-eyed vs wide-eyed test drivers so you can
-  see whether the false-alarm / missed-detection story the brief asked about
-  actually holds up on this data.
-- Every stage that makes an assumption about file naming, thresholds, or
-  dataset structure prints a warning if that assumption looks violated
-  (e.g. unmatched driver ids, "unknown" category, too few calibration
-  sequences for a driver).
 
 ## Known limitations to disclose in your report
 
